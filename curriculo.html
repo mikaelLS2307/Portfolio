@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="transicao.css">
+    <title>Currículo</title>
+</head>
+<header>
+    
+
+    <section class="nome">
+        <div class="nome1">
+            <li id="li-nome">
+                <span id="nome-cab">Mikael Lima </span> <span>/ Programador</span>
+            </li>
+        </div>
+        
+        <div class="bthome">
+            <a class="change-page" href="portfolio-mikael.html"><button id="bthome">Home</button></a>
+        </div>    
+    
+    </section>
+        
+        <style>
+            
+            #bthome{
+                border: 1px solid black;
+                border-radius: 2rem;
+                background-color: rgb(0, 119, 255);
+                color: white;
+                float: right;
+                width: 10vh;
+                height: 5vh;
+                cursor: pointer;
+                transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+                margin-right: 2%;
+                font-weight: bold;
+            }
+            #bthome:hover{
+                background-color: white;
+                color: black;
+                transform: scale(1.2);
+            }
+
+            #nome-cab{
+                font-weight: bold;
+            }
+            
+            body{
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                background-color: rgba(167, 255, 243, 0.349);
+    }
+        
+            .nome{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            
+    }
+    
+            .nome1{
+                border: none;
+                text-align: center;
+                font-size: 18pt;
+                margin: 3.2rem;
+    }
+    
+            header{
+                width: 100%;
+                position: relative;
+                z-index: 999;
+               
+                background-color: rgb(255, 255, 255);
+                
+            }
+    
+            .links{
+                border: none;
+                text-align: center;
+                margin: 3.5rem;
+                font-size: 15pt;
+            }
+            
+            #li-nome{
+                list-style-type: square;
+                list-style: linear-gradient(to right,blue,blue,blue,blue);
+                background-position: 0 0;
+                background-size: 1rem;
+                padding-left: 0.2rem;
+                line-height: 1rem;
+            }
+            
+            .icones{
+                padding-left: 2rem;
+                margin-top: 4%;
+                width: 20%
+    
+            }
+        </style>
+</header>
+<body>
+    <div class="page-transition">
+        <div class="content in-right">
+
+    <div class="txtcurriculo">
+        <li id="li-curr">Currículo</li>
+    </div>
+
+    <section id="txtbtcur">
+        
+        <div class="txtexperiencia">
+            <span id="txtexp">Experiência</span>
+        </div>
+
+        <div class="btcv">
+            <a target="_blank" href="https://drive.google.com/file/d/1ofUFRfwAVrKlz7aZoeYy4j5SB-yTt_op/view?usp=sharing" download><button id="btcur">BAIXAR CV</button></a>
+        </div>
+        
+    </section>
+
+    <style>
+        
+        #txtbtcur{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 10%;
+           
+        }
+
+        .txtcurriculo{
+            text-align: center;
+            margin-top: 5%;
+        }
+        #li-curr{
+            list-style-type: square;
+            list-style: linear-gradient(to right, blue,blue,blue,blue);
+            background-position: 25rem 0;
+            background-size: 1rem;
+            padding-right: 5.3rem;
+            line-height: 1rem;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+
+        .txtexperiencia{
+            font-size: 18pt;
+            font-weight: bold;
+        }
+        
+        #btcur{
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 119, 255);
+            transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+        }
+        #btcur:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transform: scale(1.2)
+        }
+       
+    </style>
+
+    <section id="cardsexp">
+        <div class="card1">
+            <div class="cargo1">
+                <h3 id="data1">2022 - 2024</h3>
+                <span id="txtcargo1">Ajudante Geral</span>
+                <span id="txtempresa1">Lanchonete Kero Lanches</span>
+                <span id="txtlocal1">Centro de Guarulhos - SP</span>    
+            </div>
+            <div class="descrever1">
+             <p>   
+                <span id="desc1"></span>
+            </p>
+            <span>
+                Adquiri habilidades sólidas em atendimento ao cliente, gerenciando eficientemente suas demandas e mantendo a organização. Recebi elogios pelos clientes pela excelência no atendimento e pelo bom relacionamento interpessoal.
+            </span></div>
+        </div>
+
+    </section>
+
+    <style>
+        .card1{
+            box-shadow: 7px 9px 25px  rgb(0, 0, 0,0.3);
+            border-radius: 1rem;
+            background-color: white;
+            position: static;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 2fr;
+            width: auto;
+            height: auto;
+            padding-left: 5%;
+            padding-bottom: 1%;
+            margin-left: 18%;
+            margin-top: 2%;
+            margin-right: 15%;
+            min-height: auto;
+            vertical-align: middle;
+            align-content: stretch;
+        }
+        .cargo1{
+            margin-right: 30%;
+            line-height: 2rem;
+            display: grid;
+            
+            justify-content: start;
+            align-content: center;
+            width: 100%;
+            
+        }
+        .cargo1,#data1,#txtcargo1,#txtempresa1,#txtlocal1{
+            padding-right: 3rem;
+            padding-top: 0.2rem;
+            width: 100%;
+        }
+        #data1{
+            font-weight: bold;
+            font-size: 16pt;
+            color: rgb(4, 4, 148);
+        }
+        #txtcargo1{
+            font-size: 12pt;
+            text-transform: uppercase;
+        }
+        #txtempresa1{
+            margin-top: 0.7rem;
+        }
+        .descrever1{
+            width: 30em;
+            padding-top: 0.2rem;
+            padding-right: 2rem;
+            display: grid;
+            align-content: center;
+            justify-content: left;
+            text-align: left;
+            
+        }
+        .descrever1, #desc1{
+            font-family: 'Montserrat';
+            font-size: 10pt;
+            line-height: 1.2rem;
+            width: 100%;
+        }
+    </style>
+
+<section id="cardsexp2">
+    <div class="card2">
+        <div class="cargo2">
+            <h3 id="data2">2020 - 2022</h3>
+            <span id="txtcargo2">Estoquista</span>
+            <span id="txtempresa2">ZN Dental Produtos Odontológicos LTDA</span>
+            <span id="txtlocal2">Santana - SP</span>    
+        </div>
+        <div class="descrever2">
+         <p>   
+            <span id="desc2">Responsável pela organização do estoque, reposição de produtos na loja, recebimento de mercadorias e gestão do almoxarifado.</span>
+        </p>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    .card2{
+        box-shadow: 7px 9px 25px  rgb(0, 0, 0,0.3);
+        border-radius: 1rem;
+        background-color: white;
+        position: static;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 2fr;
+        width: auto;
+        height: auto;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-right: 15%;
+        min-height: auto;
+        vertical-align: middle;
+        align-content: stretch;
+    }
+    .cargo2{
+        margin-right: 30%;
+        line-height: 2rem;
+        display: grid;
+        
+        justify-content: start;
+        align-content: center;
+        width: 100%;
+        
+    }
+    .cargo2,#data2,#txtcargo2,#txtempresa2,#txtlocal2{
+        padding-right: 3rem;
+        padding-top: 0.2rem;
+        width: 100%;
+    }
+    #data2{
+        font-weight: bold;
+        font-size: 16pt;
+        color: rgb(4, 4, 148);
+    }
+    #txtcargo2{
+        font-size: 12pt;
+        text-transform: uppercase;
+    }
+    #txtempresa2{
+        margin-top: 0.7rem;
+    }
+    .descrever2{
+        width: 30em;
+        padding-top: 0.2rem;
+        padding-right: 2rem;
+        display: grid;
+        align-content: center;
+        justify-content: left;
+        text-align: left;
+        
+    }
+    .descrever2, #desc2{
+        font-family: 'Montserrat';
+        font-size: 10pt;
+        line-height: 1.2rem;
+        width: 100%;
+    }
+</style>
+
+<section id="lblformacao">
+    <div class="txtformacao">
+        <span>Formação</span>
+    </div>
+</section>
+
+<style>
+    .txtformacao{
+        font-size: 18pt;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin-top: 10%;
+    }
+</style>
+
+<section id="cardform">
+    <div class="card3">
+        <div class="univ">
+            <h3 id="data2">2022 - 2024</h3>
+            <span id="txtuniv">ENIAC</span>
+            <span id="txtgrau">Ensino Superior</span>
+            <span id="txtlocal2">Centro de Guarulhos - SP</span>    
+        </div>
+        <div class="descrever1">
+         <p>   
+            <span id="desc1">Cursando Análise e desenvolvimento de sistemas - Conhecimentos básicos em HTML, CSS, Javascript, Banco de dados SQL, NoSQL, Android Studio, PHP e Java.</span>
+        </p>
+        <span>
+            3º Semestre - Conclusão no mês 12/2024
+        </span></div>
+    </div>
+
+</section>
+
+<style>
+    .card3{
+        box-shadow: 7px 9px 25px  rgb(0, 0, 0,0.3);
+        border-radius: 1rem;
+        background-color: white;
+        position: static;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 2fr;
+        width: auto;
+        height: auto;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-right: 15%;
+        min-height: auto;
+        vertical-align: middle;
+        align-content: stretch;
+    }
+    .univ{
+        margin-right: 30%;
+        line-height: 2rem;
+        display: grid;
+        
+        justify-content: start;
+        align-content: center;
+        width: 100%;
+        
+    }
+    .univ,#data2,#txtuniv,#txtgrau,#txtlocal2{
+        padding-right: 3rem;
+        padding-top: 0.2rem;
+        width: 100%;
+    }
+    #data2{
+        font-weight: bold;
+        font-size: 16pt;
+        color: rgb(4, 4, 148);
+    }
+    #txtuniv{
+        font-size: 12pt;
+        text-transform: uppercase;
+    }
+    #txtgrau{
+        margin-top: 0.7rem;
+    }
+    .descrever1{
+        width: 30em;
+        padding-top: 0.2rem;
+        padding-right: 2rem;
+        display: grid;
+        align-content: center;
+        justify-content: left;
+        text-align: left;
+        
+    }
+    .descrever1, #desc1{
+        font-family: 'Montserrat';
+        font-size: 10pt;
+        line-height: 1.2rem;
+        width: 100%;
+    }
+</style>
+
+<section id="cardform1">
+    <div class="card4">
+        <div class="univ1">
+            <h3 id="data3">2019 - 2021</h3>
+            <span id="txtuniv1">Microlins</span>
+            <span id="txtgrau1">Cursos Extracurriculares</span>
+            <span id="txtlocal3">Centro de Guarulhos - SP</span>    
+        </div>
+        <div class="descrever1">
+         <p>   
+            <span id="desc1">Cursei Informática - Conhecimentos em Word, Outlook, Excel, PowerPoint, Photoshop e CorelDraw.</span>
+        </p>
+        <span>
+            
+        </span></div>
+    </div>
+
+</section>
+
+<style>
+    .card4{
+        box-shadow: 7px 9px 25px  rgb(0, 0, 0,0.3);
+        border-radius: 1rem;
+        background-color: white;
+        position: static;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 2fr;
+        width: auto;
+        height: auto;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-right: 15%;
+        min-height: auto;
+        vertical-align: middle;
+        align-content: stretch;
+    }
+    .univ1{
+        margin-right: 30%;
+        line-height: 2rem;
+        display: grid;
+        
+        justify-content: start;
+        align-content: center;
+        width: 100%;
+        
+    }
+    .univ1,#data3,#txtuniv1,#txtgrau1,#txtlocal3{
+        padding-right: 3rem;
+        padding-top: 0.2rem;
+        width: 100%;
+    }
+    #data3{
+        font-weight: bold;
+        font-size: 16pt;
+        color: rgb(4, 4, 148);
+    }
+    #txtuniv1{
+        font-size: 12pt;
+        text-transform: uppercase;
+    }
+    #txtgrau1{
+        margin-top: 0.7rem;
+    }
+    .descrever1{
+        width: 30em;
+        padding-top: 0.2rem;
+        padding-right: 2rem;
+        display: grid;
+        align-content: center;
+        justify-content: left;
+        text-align: left;
+        
+    }
+    .descrever1, #desc1{
+        font-family: 'Montserrat';
+        font-size: 10pt;
+        line-height: 1.2rem;
+        width: 100%;
+    }
+</style>
+
+<section id="cardskills">
+    <div class="cardhabs">
+        <span><h1>Habilidades Profissionais</h1></span>
+    </div>
+    <div class="habs">
+        <ul id="deschabs">
+            <li>Trabalho em equipe</li>
+            <li>Relacionamento Interpessoal</li>
+            <li>Rápida aprendizagem</li>
+            <li>Determinação</li>
+        </ul>
+    </div>
+
+    <div class="cardidiomas">
+        <span id="idio"><h1>Idiomas</h1></span>
+    </div>
+    <div clas="idios">
+        <ul>
+            <li>Português (nativo)</li>
+            <li>Inglês (intermediário/técnico)</li>
+        </ul>
+    </div>
+</section>
+
+<style>
+    #cardskills{
+        box-shadow: 7px 9px 25px  rgb(0, 0, 0,0.3);
+        border-radius: 1rem;
+        background-color: white;
+        position: static;
+        display: grid;
+        justify-content: flex-start;
+        width: auto;
+        height: auto;
+        padding-left: 5%;
+        padding-bottom: 1%;
+        margin-left: 18%;
+        margin-top: 5%;
+        margin-right: 15%;
+        min-height: auto;
+        vertical-align: middle;
+        align-content: stretch;
+        margin-bottom: 5%;
+    }
+        
+
+        
+    .cardhabs{
+        display: flex;
+        justify-content: left;
+        width: auto;
+        text-align: left;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        list-style: square;
+        list-style: linear-gradient(to right, blue,blue,blue,blue);
+        font-size: 12pt;
+        font-family: 'Montserrat';
+    }
+
+    .page-transition{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+       
+
+</style>
+</div>
+    </div>
+
+</body>
+</html>
