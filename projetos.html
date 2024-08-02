@@ -132,7 +132,7 @@
 
 <body>
     
-  
+    <div class="container-projs">
         <section id="tituloproj">
             <div class="txttitulo">
                 <li id="h1tit">Projetos</li>
@@ -146,13 +146,55 @@
                 <p style="font-weight:bold">Site de uma loja de camisas esportivas </p>
                 <p id="pcard1">Este foi meu primeiro projeto, construído durante o primeiro semestre na faculdade de ADS. É um site simples, sem responsividade, com poucos recursos, apenas usando HTML e CSS praticamente.</p>
             </div>
-            <div class="vidcard1">
+            <div class="vidcard1" style="margin-left: 2rem;">
                <video class="videocard1" src="projetoLsantos.mp4" width="100%" height="100%" controls autoplay loop>
             </div>
-        </section>        
+        </section>       
+        
+        <section id="card2">
+            <div class="titulocard2">
+                <h2>App AMA - Saúde e Bem-estar digital</h2>
+                <p style="font-weight:bold">Aplicativo sobre saúde e bem-estar, com o intuito de auxiliar o usuário numa rotina mais saudável, com instruções de exercícios, alongamentos e alimentação.</p>
+                <p id="pcard1">Este foi meu segundo projeto durante a faculdade, meu primeiro aplicativo, com conexão ao banco de dados (no vídeo mostra uma versão do app com foco maior no front, mas o código atualizado, com a conexão e verificação de dados está disponível no meu GitHub). Ainda está incompleto, mas gostei muito de desenvolver. </p>
+            </div>
+            <div class="imgcard2">
+                <video id="vidcard2" src="video-app.mp4" width="100%" height="auto" controls autoplay loop>
+            </div>
+        </section>
 
+        <section id="card2">
+            <div class="titulocard2">
+                <h2>Site Gela-Goela - Açaiteria</h2>
+                <p style="font-weight:bold">Site desenvolvido durante a faculdade no 4º semestre na matéria de projeto integrador de API. </p>
+                <p id="pcard1">Este é um projeto acadêmico desenvolvido por mim e mais duas colegas, onde o intuito seria realizar vendas e entrega de açaí, onde o usuário pode escolher os complementos, informar o CEP para a entrega, realizar cadastro e login, tudo isso através de API, que é um serviço que busca e envia os dados para o Banco. Neste caso, construimos uma API para cadastrar o usuário, para realização de login, e na tela de ADM tem disponível o CRUD, que seriam as 4 operações básicas de uma aplicação, sendo elas: Create, Read, Update e Delete. Ou seja, somente o ADM possui acesso a tela que contém essas operações que manipulam o banco de dados, como alterações nos dados ou exclusão. </p>
+            </div>
+            <div class="vidcard1" style="margin-left: 2rem;">
+                <video class="videocard3" src="gela-goela ‐ Feito com o Clipchamp.mp4" style="margin-top: 50%;" width="100%" height="auto" controls autoplay loop>
+            </div>
+        </section>
+
+        <section id="card2" style="margin-bottom: 7rem;">
+            <div class="titulocard2">
+                <h2>Site ficcticio Motorola - Página desenvolvido durante o estágio no Eniac - Academy One</h2>
+                <p style="font-weight:bold">Site inspirado na marca Motorola, apenas para fim de treinamento do conhecimento em html, css e javascript, utilizando banco de dados (MySQL) para login e cadastro de usuário.</p>
+                <p id="pcard1">Este projeto eu gostei bastante de desenvolver porque pude ver como evolui no desenvolvimento web, tanto front-end quanto back-end. Mais específico no Front porque eu achei mais divertido de fazer, usando framework (Bootstrap) fica ainda mais prático de produzir os designs das páginas. Entretanto, adorei construir este projeto, tanto a parte visual quanto a parte de lógica e do banco de dados. </p>
+            </div>
+            <div class="vidcard1" style="margin-left: 2rem;">
+                <video class="videocard3" src="Prova - Pagina Motorola.webm" style="margin-top: 50%;" width="100%" height="auto" controls autoplay loop>
+            </div>
+        </section>
+
+       
+    </div>
 <style>
     
+    .container-projs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
 
     #tituloproj{
         display: grid;
@@ -200,6 +242,7 @@
        margin-top: 20%;
        border-radius: 0.6rem;
        box-shadow: 9px 9px 25px rgb(0, 0, 0,0.3);
+       transition: 0.3s ease;
     }
 
     .vidcard1{
@@ -207,6 +250,9 @@
         align-content: space-between;
         
         
+    }
+    .videocard1:hover{
+        transform: scale(1.5);
     }
 
     #card1{
@@ -221,9 +267,7 @@
         height: auto;
         padding-left: 5%;
         padding-bottom: 1%;
-        margin-left: 10%;
-        margin-top: 2%;
-        margin-right: 15%;
+        margin-top: 5%;
         min-height: auto;
         vertical-align: middle;
         align-content: stretch;
@@ -236,12 +280,13 @@
         padding-top: 5rem;
         font-family: 'Montserrat';
         margin: 2%;
+        text-align: justify;
     }
 
     @media only screen and (max-width:600px){
         #card1{
             width: 85%;
-            margin-left: 5%;
+           
             flex-direction: column;
         }
         #pcard1{
@@ -260,16 +305,7 @@
 </style>
 
 
-<section id="card2">
-    <div class="titulocard2">
-        <h2>App AMA - Saúde e Bem-estar digital</h2>
-        <p style="font-weight:bold">Aplicativo sobre saúde e bem-estar, com o intuito de auxiliar o usuário numa rotina mais saudável, com instruções de exercícios, alongamentos e alimentação.</p>
-        <p id="pcard1">Este foi meu segundo projeto durante a faculdade, meu primeiro aplicativo, com conexão ao banco de dados (no vídeo mostra uma versão do app com foco maior no front, mas o código atualizado, com a conexão e verificação de dados está disponível no meu GitHub). Ainda está incompleto, mas gostei muito de desenvolver. </p>
-    </div>
-    <div class="imgcard2">
-        <video id="vidcard2" src="video-app.mp4" width="100%" height="auto" controls autoplay loop>
-    </div>
-</section>
+
 
 <style>
 #card2{
@@ -284,9 +320,7 @@ width: 50rem;
 height: auto;
 padding-left: 5%;
 padding-bottom: 1%;
-margin-left: 10%;
 margin-top: 2%;
-margin-right: 15%;
 min-height: auto;
 vertical-align: middle;
 align-content: stretch;
@@ -312,13 +346,36 @@ margin: 2%;
     margin-top: 1rem;
     box-shadow: 8px 8px 15px rgb(0, 0, 0,0.3);
     border-radius: 2rem;
-    
+    transition: 0.3s ease;
 }
+#vidcard2:hover{
+    transform: scale(1.2);
+}
+
+.videocard3{
+        height: auto;
+        width: 20rem;
+       margin-top: 20%;
+       border-radius: 0.6rem;
+       box-shadow: 9px 9px 25px rgb(0, 0, 0,0.3);
+       transition: 0.3s ease;
+    }
+
+
+.vidcard3{
+        display: grid;
+        align-content: space-between;
+        
+        
+    }
+    .videocard3:hover{
+        transform: scale(1.9);
+    }
 
 @media only screen and (max-width:600px){
     #card2{
         width: 85%;
-        margin-left: 5%;
+     
         flex-direction: column;
     }
     .imgcard2{
